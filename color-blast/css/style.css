@@ -25,17 +25,9 @@ body {
 .game-wrap {
   position: relative;
   padding: 20px 0 0;
-<<<<<<< HEAD
-  margin: 10px 0;
-  font-size: 18px;
-  line-height: 1.5em;
-}
-.game-wrap canvas {
-=======
 }
 
 canvas {
->>>>>>> origin/master
   position: relative;
   max-width: 100%;
   border: 2px solid black;
@@ -43,26 +35,19 @@ canvas {
   display: block;
   margin: 0 auto;
 }
-<<<<<<< HEAD
-.game-wrap .content {
-=======
 
 .content {
->>>>>>> origin/master
   color: #ccc;
   text-align: center;
   padding: 0 20px;
 }
 
-<<<<<<< HEAD
-=======
 p {
   margin: 10px 0;
   font-size: 18px;
   line-height: 1.5em;
 }
 
->>>>>>> origin/master
 code {
   background: #222;
   background: -webkit-linear-gradient(#222, #000);
