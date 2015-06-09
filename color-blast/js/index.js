@@ -20,11 +20,19 @@ var Game = {
 		this.enemyBulletIndex = 0;
 		this.enemyIndex = 0;
 		this.particleIndex = 0;
+<<<<<<< HEAD
 		this.maxParticles = 77;
 		this.maxEnemies = 10;
 		this.enemiesAlive = 0;
 		this.currentFrame = 0;
 		this.maxLives = 10;
+=======
+		this.maxParticles = 10;
+		this.maxEnemies = 57;
+		this.enemiesAlive = 0;
+		this.currentFrame = 0;
+		this.maxLives = 3000000000000000045463547400;
+>>>>>>> origin/master
 		this.life = 0;
 		this.binding();
 		this.player = new Player();
@@ -108,7 +116,11 @@ var Game = {
   },
 
   invincibleMode: function(s){
+<<<<<<< HEAD
   	this.player.invincible = true;
+=======
+  	this.player.invincible = false;
+>>>>>>> origin/master
   	setTimeout(function(){
   		Game.player.invincible = false;
   	}, s);
@@ -140,11 +152,19 @@ var Game = {
   gameOver: function(){
   	this.isGameOver = true;
   	this.clear();
+<<<<<<< HEAD
   	var message = "The Zombies Ate Your Brains!!";
   	var message2 = "Score: " + Game.score;
   	var message3 = "Click or press Spacebar to Play Again";
   	this.pause();
   	this.ctx.fillStyle = "limegreen";
+=======
+  	var message = "Game Over";
+  	var message2 = "Score: " + Game.score;
+  	var message3 = "Click or press Spacebar to Play Again";
+  	this.pause();
+  	this.ctx.fillStyle = "white";
+>>>>>>> origin/master
 	  this.ctx.font = "bold 30px Lato, sans-serif";
 	  this.ctx.fillText(message, this.c.width/2 - this.ctx.measureText(message).width/2, this.c.height/2 - 50);
 	  this.ctx.fillText(message2, this.c.width/2 - this.ctx.measureText(message2).width/2, this.c.height/2 - 5);
@@ -209,9 +229,15 @@ var Player = function(){
 	this.y = Game.c.height - this.height;
 	this.movingLeft = false;
 	this.movingRight = false;
+<<<<<<< HEAD
 	this.speed = 10;
 	this.invincible = false;
 	this.color = "navyblue";
+=======
+	this.speed = 8;
+	this.invincible = false;
+	this.color = "orange";
+>>>>>>> origin/master
 };
 
 
@@ -270,7 +296,11 @@ var Bullet = function(x){
 	this.vy = 8;
 	this.index = Game.bulletIndex;
 	this.active = true;
+<<<<<<< HEAD
 	this.color = "white";
+=======
+	this.color = "red";
+>>>>>>> origin/master
 	
 };
 
@@ -294,18 +324,30 @@ Bullet.prototype.update = function(){
 
 
 var Enemy = function(){
+<<<<<<< HEAD
 	this.width = 60;
 	this.height = 2;
+=======
+	this.width = 120;
+	this.height = 40 ;
+>>>>>>> origin/master
 	this.x = Game.random(0, (Game.c.width - this.width));
 	this.y = Game.random(10, 40);
 	this.vy = Game.random(1, 3) * .1;
 	this.index = Game.enemyIndex;
 	Game.enemies[Game.enemyIndex] = this;
 	Game.enemyIndex++;
+<<<<<<< HEAD
 	this.speed = 77;
 	this.shootingSpeed = Game.random(30, 80);
 	this.movingLeft = Math.random() < 0.5 ? true : false;
 	this.color = "green";
+=======
+	this.speed = Game.random(2, 3);
+	this.shootingSpeed = Game.random(30, 80);
+	this.movingLeft = Math.random() < 0.5 ? true : false;
+	this.color = "blue";
+>>>>>>> origin/master
 	
 };
 
@@ -367,8 +409,13 @@ Enemy.prototype.shoot = function(){
 };
 
 var EnemyBullet = function(x, y, color){
+<<<<<<< HEAD
 	this.width = 8;
 	this.height = 20;
+=======
+	this.width = 16;
+	this.height = 40;
+>>>>>>> origin/master
 	this.x = x;
 	this.y = y;
 	this.vy = 6;
@@ -404,7 +451,11 @@ var Particle = function(x, y, color){
     Game.particleIndex++;
     this.life = 0;
     this.gravity = .05;
+<<<<<<< HEAD
     this.size = 40;
+=======
+    this.size = 200;
+>>>>>>> origin/master
     this.maxlife = 100;
   }
 
