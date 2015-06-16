@@ -92,7 +92,7 @@ position:absolute;top:50%;margin-top:-50px;width:100%;text-align:center}
 @media all and (max-width: 640px) and (min-width: 0px){
 	a{line-height:50px;font-size:13px}
 	.logo{width:300px;height:300px;margin:-150px 0 0 -150px}
-	.logo .f{font:normal 80px/150px 'Open Sans'}
+	.logo .f{font:normal 80px/150px 'Chewy'}
 	.logo .contentbox h2{font-size:16px;margin:24px 0;}
 	.logo .instructions h2{display:none}
 	.logo .instructions.contentbox p:nth-child(3){display:none}
